@@ -1,0 +1,20 @@
+{
+  "name": "typescript-basic-project",
+  "version": "0.1.0",
+  "description": "Template used for creating TypeScript projects.",
+  "author": "Mike McMann",
+  "main": "dist/js/app.js",
+  "license": "ISC",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc -t es5 -m commonjs --sourceMap --noImplicitAny --removeComments --preserveConstEnums --out dist/js/app.js src/app.ts"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-nodemon": "^2.0.2",
+    "gulp-typescript": "^2.6.0"
+  }
+}
